@@ -8,7 +8,7 @@
 
 * [Introduction](#introduction)
 * [Installing LXC](#installing-lxc)
-    * [Configuring LXC ( Arch Only )](#configuring-lxc-(-arch-only-))
+    * [Configuring LXC in Arch Only ](#configuring-lxc-in-arch)
     * [Installing Debain-sid in LXC](#installing-debain-sid-in-lxc)
 * [Installing Docker](#installing-docker)
     * [Docker Prerequisites](#docker-prerequisites)
@@ -17,7 +17,7 @@
 * [Practical Session 1](#practical-session-1)
 * [Practical Session 2](#practical-session-2)
 * [Practical Session 3](#practical-session-3)
-* Practical Session 4
+* [Practical Session 4](#practical-session-4)
 * [Common Issues](#common-issues)
     - [Permission Denied](#permission-denied)
     - [Cannot connect to Docker](#cannot-connect-to-docker)
@@ -1011,6 +1011,8 @@ Edit ``control``, ``changelog`` and ``Makefile`` to remove the ``lintain`` error
 $ dpkg-buildpackage -us -uc
 ```
 
+_Note_: ``-us -uc`` stands for *unsigned*, for not signing the binary temporarly.
+
 If successful, this provides us with a ``.deb`` file in parent directory. Install it using,
 
 ```bash
@@ -1018,6 +1020,10 @@ $ dpkg -i ./hello_0.1-1_amd64.deb
 ```
 
 Running ``hello`` in the terminal now, prints ``Hello, world!!``. Thus, a simple C program have been packaged successfully.
+
+## Practical Session 4
+
+
 
 ## Session 5 (Bonus)
 
@@ -1140,7 +1146,7 @@ This documentation will not be possible without the below sources.
 
 - [x] Complete  Session 1 (dpkg-buildpackage)
 - [x] Complete Session 2 (salsa + sbuild)
-- [ ] Complete Session 3 (Intoduction dh_make)
+- [x] Complete Session 3 (Intoduction dh_make)
 - [ ] Complete Session 4 (gem2deb)
 - [ ] Bonus packaging
 - [ ] Try packaging a module with dependencies
