@@ -73,7 +73,7 @@ sudo pacman -S lxc
 
 ## Configuring LXC( Debian Only )
 
-....
+Visit [https://wiki.debian.org/LXC#Network_setup_in_buster](https://wiki.debian.org/LXC#Network_setup_in_buster) for Debian Buster specific changes.
 
 ## Configuring LXC ( Arch Only )
 
@@ -1150,7 +1150,7 @@ This documentation will not be possible without the below sources.
 - [ ] Complete Session 4 (gem2deb)
 - [ ] Bonus packaging
 - [ ] Try packaging a module with dependencies
-- [ ] Make an official contribution to Debian
+- [x] Make an official contribution to Debian [2 packages]
 - [ ] Become a DM / DD 🤭
 
 ## Special Thanks
